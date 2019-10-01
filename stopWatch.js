@@ -15,6 +15,7 @@ class Stopwatch {
   reset() {
     this.times = [0, 0, 0];
   }
+
   toggle() {
     if (this.running) {
       this.stop();
@@ -22,6 +23,7 @@ class Stopwatch {
       this.start();
     }
   }
+
   start() {
     this.toggleBtn.value = "Pause";
     this.splitBtn.disabled = false;
@@ -82,10 +84,6 @@ class Stopwatch {
       "background-color: #F29E26; color: white; border-color: #F29E26";
   }
 
-  clear() {
-    clearChildren(this.results);
-  }
-
   step(timestamp) {
     if (!this.running) return;
     this.calculate(timestamp);
@@ -123,10 +121,6 @@ function pad0(value, count) {
   var result = value.toString();
   for (; result.length < count; --count) result = "0" + result;
   return result;
-}
-
-function clearChildren(node) {
-  while (node.lastChild) node.removeChild(node.lastChild);
 }
 
 let stopwatch = new Stopwatch(
