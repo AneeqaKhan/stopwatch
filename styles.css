@@ -1,0 +1,47 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  background: #f5f8fb;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  padding: 0 30px;
+}
+
+.controls {
+  width: 100%;
+}
+
+.button {
+  width: 100px;
+  height: 100px;
+  border: 1px solid gray;
+  border-radius: 50px;
+  margin-right: 10px;
+  font-size: 20px;
+  background-color: inherit;
+  color: gray;
+  cursor: pointer;
+  text-decoration: none;
+  text-align: center;
+}
+
+.stopwatch {
+  font-size: 130px;
+}
+
+.results {
+  margin: 10px 900px 0 0;
+  border-top: 2px solid #cccccc;
+}
+
+li {
+  padding: 5px 0;
+  margin: 0 20px;
+  color: gray;
+  font-size: 20px;
+}
